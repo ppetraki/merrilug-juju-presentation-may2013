@@ -1,0 +1,91 @@
+<04:27:07>full-deployment$ ./deploy.sh 
+2013-05-07 16:27:09,729 INFO Bootstrapping environment 'ec2-devel' (origin: ppa type: ec2)...
+2013-05-07 16:27:12,197 INFO 'bootstrap' command finished successfully
+2013-05-07 16:31:17,015 INFO Searching for charm local:precise/lamp in local charm repository: /home/ppetraki/Sandbox/nhluh-prez/merrilug-juju-presentation-may2013/full-deployment/charms
+2013-05-07 16:31:17,054 INFO Connecting to environment...
+2013-05-07 16:31:18,702 INFO Connected to environment.
+2013-05-07 16:31:21,289 INFO Charm deployed as service: 'lamp'
+2013-05-07 16:31:21,291 INFO 'deploy' command finished successfully
+2013-05-07 16:31:21,634 INFO Searching for charm local:precise/haproxy in local charm repository: /home/ppetraki/Sandbox/nhluh-prez/merrilug-juju-presentation-may2013/full-deployment/charms
+2013-05-07 16:31:21,662 INFO Connecting to environment...
+2013-05-07 16:31:23,692 INFO Connected to environment.
+2013-05-07 16:31:24,970 INFO Charm deployed as service: 'haproxy'
+2013-05-07 16:31:24,971 INFO 'deploy' command finished successfully
+2013-05-07 16:31:25,331 INFO Connecting to environment...
+2013-05-07 16:31:26,899 INFO Connected to environment.
+2013-05-07 16:31:27,252 INFO Added http relation to all service units.
+2013-05-07 16:31:27,253 INFO 'add_relation' command finished successfully
+2013-05-07 16:31:27,603 INFO Searching for charm local:precise/ganglia in local charm repository: /home/ppetraki/Sandbox/nhluh-prez/merrilug-juju-presentation-may2013/full-deployment/charms
+2013-05-07 16:31:27,632 INFO Connecting to environment...
+2013-05-07 16:31:29,001 INFO Connected to environment.
+2013-05-07 16:31:30,256 INFO Charm deployed as service: 'ganglia'
+2013-05-07 16:31:30,257 INFO 'deploy' command finished successfully
+2013-05-07 16:31:30,600 INFO Searching for charm local:precise/ganglia-node in local charm repository: /home/ppetraki/Sandbox/nhluh-prez/merrilug-juju-presentation-may2013/full-deployment/charms
+2013-05-07 16:31:30,628 INFO Connecting to environment...
+2013-05-07 16:31:32,032 INFO Connected to environment.
+2013-05-07 16:31:32,606 INFO Subordinate 'ganglia-node' awaiting relationship to principal for deployment.
+2013-05-07 16:31:32,606 INFO Charm deployed as service: 'ganglia-node'
+2013-05-07 16:31:32,607 INFO 'deploy' command finished successfully
+2013-05-07 16:31:32,941 INFO Searching for charm local:precise/siege in local charm repository: /home/ppetraki/Sandbox/nhluh-prez/merrilug-juju-presentation-may2013/full-deployment/charms
+2013-05-07 16:31:32,969 INFO Connecting to environment...
+2013-05-07 16:31:34,408 INFO Connected to environment.
+2013-05-07 16:31:35,733 INFO Charm deployed as service: 'siege'
+2013-05-07 16:31:35,734 INFO 'deploy' command finished successfully
+2013-05-07 16:31:36,090 INFO Connecting to environment...
+2013-05-07 16:31:37,530 INFO Connected to environment.
+2013-05-07 16:31:37,902 INFO Added juju-info relation to all service units.
+2013-05-07 16:31:37,903 INFO 'add_relation' command finished successfully
+2013-05-07 16:31:38,282 INFO Connecting to environment...
+2013-05-07 16:31:40,154 INFO Connected to environment.
+2013-05-07 16:31:40,541 INFO Added monitor relation to all service units.
+2013-05-07 16:31:40,541 INFO 'add_relation' command finished successfully
+2013-05-07 16:31:41,211 juju.common:INFO Connecting to environment...
+2013-05-07 16:31:43,132 juju.common:INFO Connected to environment.
+2013-05-07 16:31:43,134 watch:INFO Waiting for unit lamp/0...
+2013-05-07 16:31:43,259 watch:INFO Waiting for unit lamp/0 to be in [install-error, start-error, started] and not in []
+2013-05-07 16:34:49,756 watch:INFO Completed waiting for unit lamp/0 state: started
+2013-05-07 16:34:49,756 watch:INFO Completed waiting for unit lamp/0
+lamp/0
+2013-05-07 16:34:50,412 juju.common:INFO Connecting to environment...
+2013-05-07 16:34:52,576 juju.common:INFO Connected to environment.
+2013-05-07 16:34:52,576 watch:INFO Waiting for unit lamp/1...
+2013-05-07 16:34:52,711 watch:INFO Waiting for unit lamp/1 to be in [install-error, start-error, started] and not in []
+2013-05-07 16:34:52,886 watch:INFO Completed waiting for unit lamp/1 state: started
+2013-05-07 16:34:52,886 watch:INFO Completed waiting for unit lamp/1
+lamp/1
+2013-05-07 16:34:53,553 juju.common:INFO Connecting to environment...
+2013-05-07 16:34:55,475 juju.common:INFO Connected to environment.
+2013-05-07 16:34:55,476 watch:INFO Waiting for unit lamp/2...
+2013-05-07 16:34:55,609 watch:INFO Waiting for unit lamp/2 to be in [install-error, start-error, started] and not in []
+2013-05-07 16:34:55,779 watch:INFO Completed waiting for unit lamp/2 state: started
+2013-05-07 16:34:55,779 watch:INFO Completed waiting for unit lamp/2
+lamp/2
+2013-05-07 16:34:56,439 juju.common:INFO Connecting to environment...
+2013-05-07 16:34:58,330 juju.common:INFO Connected to environment.
+2013-05-07 16:34:58,331 watch:INFO Waiting for unit ganglia/0...
+2013-05-07 16:34:58,461 watch:INFO Waiting for unit ganglia/0 to be in [install-error, start-error, started] and not in []
+2013-05-07 16:35:46,118 watch:INFO Completed waiting for unit ganglia/0 state: started
+2013-05-07 16:35:46,118 watch:INFO Completed waiting for unit ganglia/0
+ganglia/0
+2013-05-07 16:35:46,465 INFO Connecting to environment...
+2013-05-07 16:35:48,438 INFO Connected to environment.
+2013-05-07 16:35:48,520 INFO Service 'lamp' was exposed.
+2013-05-07 16:35:48,521 INFO 'expose' command finished successfully
+2013-05-07 16:35:48,868 INFO Connecting to environment...
+2013-05-07 16:35:50,846 INFO Connected to environment.
+2013-05-07 16:35:50,932 INFO Service 'haproxy' was exposed.
+2013-05-07 16:35:50,933 INFO 'expose' command finished successfully
+2013-05-07 16:35:51,295 INFO Connecting to environment...
+2013-05-07 16:35:53,213 INFO Connected to environment.
+2013-05-07 16:35:53,303 INFO Service 'ganglia' was exposed.
+2013-05-07 16:35:53,304 INFO 'expose' command finished successfully
+2013-05-07 16:35:53,674 INFO Connecting to environment...
+2013-05-07 16:35:55,689 INFO Connected to environment.
+2013-05-07 16:35:56,776 INFO 'status' command finished successfully
+        public-address: ec2-50-16-125-26.compute-1.amazonaws.com
+please point browser to ganglia public-address/ganglia/
+beginning siege
+2013-05-07 16:36:27,128 INFO Connecting to environment...
+2013-05-07 16:36:28,972 INFO Connected to environment.
+2013-05-07 16:36:29,400 INFO Added http relation to all service units.
+2013-05-07 16:36:29,400 INFO 'add_relation' command finished successfully

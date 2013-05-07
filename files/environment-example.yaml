@@ -1,0 +1,19 @@
+# Setting a default environment is fine for a small number of environments
+# but once you start managing dozens of them, leaving this unset is safeguard
+# against accidental service deployment or worse service | environment destruction
+#default: foo
+environments:
+  ec2-devel:
+    type: ec2
+    access-key: <YOUR PRIVATE ACCESS KEY>
+    secret-key: <YOUR SECRET KEY>
+    control-bucket: ec2-devel-<r!uuidgen>
+    admin-secret: ec2-devel-<r!uuidgen>
+    default-series: precise
+    region: us-east-1
+    juju-origin: ppa
+    instance-type: t1.small
+    ssl-hostname-verification: True
+    authorized-keys: |
+      ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAyydE6EEyR3Js68Ig550RuFBhLfapIJbH3q0uXZWMCtfhI2+PzqMJs6hpo+OxugFcr39TILo0FGIgUdohk/5wwuSHXh2zTwUIFG+BGJXF1OKAyFuRJvaXyeFgR/6mdsHvZp6aoedS6MvC4qTnePGEGVkqdNdq4KjwZgwNhOzjgQv9vrfRWmQg7z2gyMtj757AWlda5UhgEiNGkbtAeOwXMfzV0sqRJiInNdbLHqPsKRW+Z3uXVcPFBjbRs8ltKwkuOYg9FwRExzaemE2n6p5AwI56EZnRctcBrLiEL/gVop4L7ciy1d1sHoGwWO8XxRZLyYoLkOd1twPqkSktEx6eSw== ppetraki@tsunami.localdomain
+# vim:ts=2:sw=2:et:

@@ -1,0 +1,20 @@
+<04:32:25>config-example$ ./deploy.sh 
+2013-05-07 16:32:29,752 INFO Bootstrapping environment 'hpcloud-devel' (origin: ppa type: openstack)...
+2013-05-07 16:32:38,223 WARNING default-instance-type is deprecated, use cli --constraints
+2013-05-07 16:32:43,177 INFO 'bootstrap' command finished successfully
+2013-05-07 16:35:55,536 INFO Searching for charm local:precise/opengrok in local charm repository: /home/ppetraki/Sandbox/nhluh-prez/merrilug-juju-presentation-may2013/config-example/charms
+2013-05-07 16:35:56,769 INFO Connecting to environment...
+2013-05-07 16:35:59,812 INFO Connected to environment.
+2013-05-07 16:36:11,066 INFO Charm deployed as service: 'opengrok'
+2013-05-07 16:36:11,068 INFO 'deploy' command finished successfully
+2013-05-07 16:36:11,703 juju.common:INFO Connecting to environment...
+2013-05-07 16:36:15,565 juju.common:INFO Connected to environment.
+2013-05-07 16:36:15,566 watch:INFO Waiting for unit opengrok/0...
+2013-05-07 16:36:16,024 watch:INFO Waiting for unit opengrok/0 to be in [install-error, start-error, started] and not in []
+2013-05-07 16:41:49,124 watch:INFO Completed waiting for unit opengrok/0 state: started
+2013-05-07 16:41:49,124 watch:INFO Completed waiting for unit opengrok/0
+opengrok/0
+2013-05-07 16:41:49,555 INFO Connecting to environment...
+2013-05-07 16:41:54,480 INFO Connected to environment.
+2013-05-07 16:41:56,805 INFO 'status' command finished successfully
+        public-address: 15.185.107.122
